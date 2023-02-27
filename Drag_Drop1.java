@@ -17,8 +17,7 @@ public class Drag_Drop1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.google.com/doodles");
 		WebElement ele = driver.findElement(By.linkText("Valentine's Day 2023"));
-		Actions a=new Actions(driver);
-		a.click(ele).perform();
+		
 	}
 
 }
