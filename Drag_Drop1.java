@@ -14,6 +14,7 @@ public class Drag_Drop1 {
 	{
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.google.com/doodles");
 		WebElement ele = driver.findElement(By.linkText("Valentine's Day 2023"));
